@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset=gbk>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!--[if IE]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<![endif]-->
+
+<title>全球精品量贩惠</title>
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="./themesmobile/mbts1/htactivity1.css?v=18111604">
+
+	<!--组件依赖css begin-->
+	<link rel="stylesheet" type="text/css" href="./themesmobile/mbts1/css/widget/navigator/navigator.css" />
+	<link rel="stylesheet" type="text/css" href="./themesmobile/mbts1/css/widget/navigator/navigator.iscroll.css" />
+	<!--皮肤文件，若不使用该皮肤，可以不加载-->
+	<!--组件依赖css end-->	
+    <!--组件依赖js begin-->
+
+	<script type="text/javascript" src="./themesmobile/mbts1/js/zepto.js"></script>
+	<script type="text/javascript" src="./themesmobile/mbts1/js/zepto.extend.js"></script>
+	<script type="text/javascript" src="./themesmobile/mbts1/js/zepto.ui.js"></script>
+	<script type="text/javascript" src="./themesmobile/mbts1/js/zepto.iscroll.js"></script>
+	<script type="text/javascript" src="./themesmobile/mbts1/js/widget/navigator.js"></script>
+	<script type="text/javascript" src="./themesmobile/mbts1/js/widget/navigator.iscroll.js"></script>
+	<!--组件依赖js end-->
+<!--swiper自动切换-->
+<link rel="stylesheet" href="./themesmobile/mbts1/css/swiper.min.css">
+<!--swiper自动切换 end-->
+
+
+
+{* 包含脚本文件 *}
+{insert_scripts files='transport.js'}
+
+</head>
+<body>
+{if $isPC eq 1}
+<!-- #BeginLibraryItem "/library/page_headerspc.lbi" --><!-- #EndLibraryItem -->
+{else}
+<!-- #BeginLibraryItem "/library/page_gotop.lbi" --><!-- #EndLibraryItem -->
+{/if}
+
+<script >
+
+var Tday  = new Date(2019,07,30,10,00,00) ;
+var Tday1 = new Date(2018,11,15,10,00,00) ; 
+var daysms = 24 * 60 * 60 * 1000
+var hoursms = 60 * 60 * 1000
+var Secondms = 60 * 1000
+var microsecond = 1000
+var DifferHour = -1
+var DifferMinute = -1
+var DifferSecond = -1
+function clock()
+{
+ var time = new Date()
+var hour = time.getHours()
+ var minute = time.getMinutes()
+var second = time.getSeconds()
+var timevalue = ""+((hour > 12) ? hour-12:hour)
+timevalue +=((minute < 10) ? ":0":":")+minute
+timevalue +=((second < 10) ? ":0":":")+second
+timevalue +=((hour >12 ) ? " PM":" AM")
+
+var convertHour = DifferHour
+var convertMinute = DifferMinute
+var convertSecond = DifferSecond
+var Diffms = Tday.getTime() - time.getTime()
+var Diffms1 = Tday1.getTime() - time.getTime()
+DifferHour= Math.floor(Diffms / daysms)
+Diffms -= DifferHour * daysms
+DifferHour1= Math.floor(Diffms1 / daysms)
+Diffms1 -= DifferHour1 * daysms
+DifferMinute = Math.floor(Diffms / hoursms)
+if(DifferMinute<10){
+DifferMinute="0"+DifferMinute;
+}
+Diffms -= DifferMinute * hoursms
+DifferMinute1 = Math.floor(Diffms1 / hoursms)
+if(DifferMinute1<10){
+DifferMinute1="0"+DifferMinute1;
+}
+Diffms1 -= DifferMinute1 * hoursms
+DifferSecond = Math.floor(Diffms / Secondms)
+if(DifferSecond<10){
+DifferSecond="0"+DifferSecond;
+}
+Diffms -= DifferSecond * Secondms
+DifferSecond1 = Math.floor(Diffms1 / Secondms)
+if(DifferSecond1<10){
+DifferSecond1="0"+DifferSecond1;
+}
+Diffms1 -= DifferSecond1 * Secondms
+var dSecs = Math.floor(Diffms / microsecond)
+if(dSecs<10){
+dSecs="0"+dSecs;
+}
+var DSecs = Math.floor(Diffms / 100) % 10;  
+var dSecs1 = Math.floor(Diffms1 / microsecond)
+if(dSecs1<10){
+dSecs1="0"+dSecs1;
+}
+var DSecs1 = Math.floor(Diffms1 / 100) % 10; 
+
+
+if(DifferHour<0)
+{
+
+
+
+
+}
+else
+{
+
+  
+a="距结束：<font>"+DifferHour+"</font>天";
+b="<font>"+DifferMinute+"</font>时";
+c="<font>"+DifferSecond+"</font>分"
+d="<font>"+dSecs+"</font>秒"
+e="<font>"+DSecs+"</font>"
+
+
+}
+
+document.getElementById("leftTimes").innerHTML = a + b + c + d + e ; //显示倒计时信息
+}
+ 
+</script>    
+
+<div class="HD_containers HD_bgcolor">
+<div class="HD_container">
+
+	<div class="k750"><img src="./themesmobile/mbts1/images/liangfan0826_01.jpg" alt=""/><img src="./themesmobile/mbts1/images/liangfan0826_02.jpg" alt=""/></div>  
+	<!--固定在页面中的-->
+   <!--固定在页面中的-->
+    <div id="top_nav_fix" class="topnav">
+    <div class="tn">
+        <div id="nav-smartSetup" class="nav_smart">
+            <ul>			
+                <li><a>钜惠福利</a></li>
+				<li><a>会场直达</a></li>
+                <li><a>底价拼团</a></li>
+                <li><a>超级优惠</a></li>
+                <li><a>精品量贩</a></li>
+				<li><a>海外奶粉</a></li>	
+                <li><a>婴幼营养</a></li> 
+                <li><a>米粉辅食</a></li>
+				<li><a>自营尿裤</a></li>
+				<li><a>宝宝洗护</a></li>
+				<li><a>奶瓶喂养</a></li>
+				<li><a>精品童装</a></li>
+				<li><a>护肤美妆</a></li>
+				<li><a>妈妈用品</a></li>
+				<li><a>家人营养</a></li>
+				<li><a>美食生活</a></li>
+                <li><a>更多会场</a></li>    
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+    </div>       
+<script type="text/javascript">
+(function () {
+    /*组件初始化js begin*/
+    $('#nav-smartSetup').navigator();    //smart setup方式创建 推荐方式
+})();
+</script>
+    <!--固定在页面中的 结束-->
+    <!--float的-->
+    <div id="top_nav_float" class="topnav">
+    <div class="tn">
+        <div id="nav-smartSetup2" class="nav_smart">
+            <ul>
+                
+                <li><a>钜惠福利</a></li>
+				<li><a>会场直达</a></li>
+                <li><a>底价拼团</a></li>
+                <li><a>超级优惠</a></li>
+                <li><a>精品量贩</a></li>
+				<li><a>海外奶粉</a></li>	
+                <li><a>婴幼营养</a></li> 
+                <li><a>米粉辅食</a></li>
+				<li><a>自营尿裤</a></li>
+				<li><a>宝宝洗护</a></li>
+				<li><a>奶瓶喂养</a></li>
+				<li><a>精品童装</a></li>
+				<li><a>护肤美妆</a></li>
+				<li><a>妈妈用品</a></li>
+				<li><a>家人营养</a></li>
+				<li><a>美食生活</a></li>
+                <li><a>更多会场</a></li> 
+
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+    </div>
+<script type="text/javascript">
+(function () {
+    /*组件初始化js begin*/
+    $('#nav-smartSetup2').navigator();    //smart setup方式创建 推荐方式
+    $("#top_nav_float").hide();
+})();
+</script>
+    <!--float的 end-->
+    
+    <script type="text/javascript">
+	var start_float_pos = $("#top_nav_fix").offset().top ; //开始浮动位置
+	var docu = (document.documentElement.scrollTop) ? document.documentElement : document.body;
+	var scroll_height;
+	var part_pos;
+	var index;
+	
+	$("#nav-smartSetup li").click(function(e) {
+		index = $(this).index();
+		if(index > 0)
+		{
+			part_pos = $("#part"+(index+1)).offset().top - $("#top_nav_fix").height() ; //每一部分的位置，需减去页面头部高度
+			//alert(part_pos);
+			docu.scrollTop = part_pos; //滚动到相应位置
+		}
+	});
+	
+	$("#nav-smartSetup2 li").click(function(e) {
+		index = $(this).index();
+		
+		part_pos = $("#part"+(index+1)).offset().top - $("#top_nav_fix").height() ; //每一部分的位置，需减去页面头部高度
+		//alert(part_pos);
+		docu.scrollTop = part_pos; //滚动到相应位置
+	});
+	$("#show_navigator_list li").click(function(e) {
+		index = $(this).index();
+				
+		part_pos = $("#part"+(index+1)).offset().top - $("#top_nav_fix").height() ; //每一部分的位置，需减去页面头部高度
+		//alert(part_pos);
+		docu.scrollTop = part_pos; //滚动到相应位置
+		$("#show_navigator_list").hide();
+		$("#page_dialog_bj").hide();
+	});
+	
+	$(window).scroll(function(e) {
+		start_float_pos = $("#top_nav_fix").offset().top ; //开始浮动位置
+		scroll_height = docu.scrollTop;
+		if(scroll_height >= start_float_pos)
+		{
+			$("#top_nav_float").show();
+			$("#top_nav_float").addClass("topnav_float");
+			$("#nav-smartSetup2 li").each(function(index, element) {
+				part_pos1 = $("#part"+(index+1)).offset().top - $("#top_nav_fix").height() ;
+				part_pos2 = $("#part"+(index+2)).offset().top - $("#top_nav_fix").height() ;
+				part_pos1 = Math.floor(part_pos1);
+				part_pos2 = Math.floor(part_pos2);
+				if(scroll_height >= part_pos1 && scroll_height < part_pos2)
+				{
+					$(".show_allnav").find("li").eq(index).children("a").addClass("active");
+					$(".show_allnav").find("li").eq(index).siblings().children("a").removeClass("active");
+					$("#nav-smartSetup2").navigator('switchTo',index);
+				}
+			});
+		}
+		else
+		{
+			$("#top_nav_float").hide();
+			$("#nav-smartSetup").navigator('switchTo',0);
+		}
+	});
+	$(window).resize(function(e) {
+		start_float_pos = $("#top_nav_fix").offset().top ; //开始浮动位置
+	});
+	
+	/*所有导航列表处理*/
+	$(".navigator_down").click(function(e) {
+		$("#show_navigator_list").show();
+		$("#page_dialog_bj").show();
+	});
+	$(".navigator_up,#page_dialog_bj").click(function(e) {
+		$("#show_navigator_list").hide();
+		$("#page_dialog_bj").hide();
+	});
+	</script>
+    
+    <div class="HD_content">
+    	<div class="shijian" >
+        	 <div class="djs" id="leftTimes"></div>
+			 <script>
+			 window.setInterval(function(){clock();}, 100);
+			 </script>
+        </div>
+        
+        
+        <div class="k188"><a href="article.php?id=9368"><img src="./themesmobile/mbts1/images/liangfan0826_03.jpg" alt=""/></a></div>
+        <div class="k187"><a href="article.php?id=10526"><img src="./themesmobile/mbts1/images/liangfan0826_04.jpg" alt=""/></a></div>
+        <div class="k187"><a href="directmail.php"><img src="./themesmobile/mbts1/images/liangfan0826_05.jpg" alt=""/></a></div>
+        <div class="k188"><a href="article.php?id=10536"><img src="./themesmobile/mbts1/images/liangfan0826_06.jpg" alt=""/></a></div>
+		<div class="k750" ><a href="sincere.php"><img src="./themesmobile/mbts1/images/liangfan0826_07.jpg" alt=""/></a></div>
+		
+        <div class="clear"></div>
+        <div class="k750" id="part1"><a href="coupon12.php"><img src="./themesmobile/mbts1/images/liangfan0826_08.jpg" /></a></div>
+		<div class="clear"></div>
+        <div class="k750" id="part2"><img src="./themesmobile/mbts1/images/liangfan0826_09.jpg" alt="会场精选" /></div>
+		<div class="k375" ><a href="savemoney.php"><img src="./themesmobile/mbts1/images/liangfan0826_10.jpg" alt="" /></a><a href="foodsale.php"><img src="./themesmobile/mbts1/images/liangfan0826_11.jpg" alt="" /></a></div>
+		<div class="k375" ><a href="savemoney.php"><img src="./themesmobile/mbts1/images/liangfan0826_12.jpg" alt="" /></a><a href="babysupplies.php"><img src="./themesmobile/mbts1/images/liangfan0826_13.jpg" alt="" /></a></div>
+		<div class="k375" ><a href="momhealth.php"><img src="./themesmobile/mbts1/images/liangfan0826_14.jpg" alt="" /></a><a href="2019summer.php"><img src="./themesmobile/mbts1/images/liangfan0826_15.jpg" alt="" /></a></div>
+		<div class="k375" ><a href="makeup.php"><img src="./themesmobile/mbts1/images/liangfan0826_16.jpg" alt="" /></a><a href="2019summer.php"><img src="./themesmobile/mbts1/images/liangfan0826_17.jpg" alt="" /></a></div>
+		<div class="clear"></div>
+		<div class="k750"><img src="./themesmobile/mbts1/images/liangfan0826_18.jpg" alt="会场精选" /></div>
+		<div class="k375" ><a href="freetrade.php"><img src="./themesmobile/mbts1/images/liangfan0826_19.jpg" alt="" /></a><a href="nature.php"><img src="./themesmobile/mbts1/images/liangfan0826_20.jpg" alt="" /></a></div>
+		<div class="clear"></div>
+        {if $isPC eq 0}  
+		<div class="k750" id="part3"><a href="grouping.php"><img src="./themesmobile/mbts1/images/liangfan0826_22.jpg"  alt="拼团"/></a></div>
+		<div style="width:100%; max-width:750px;  overflow:auto;  padding-bottom:10px; padding-top:10px;  -webkit-overflow-scrolling: touch; " id="d1">  
+		<table>
+			<tr>
+                <!--{foreach from=$pintuan1 item=goods}-->
+                <!-- {if $goods.goods_id} -->
+                <td>
+				 <div class="content">
+					<div class="ny2015_germany_body1">
+                    <div class="goods"> 
+                         <p class="goods_img"><a href="group_goods.php?act=view&id={$goods.goods_id}&act_id={$goods.act_id}" class="good_img"><img src="{$goods.goods_img}" alt="{$goods.act_name}"/></a></p>
+						 <p class="jiesheng">已团{$goods.countpac}件</p>
+		                 <p style="display:block; width:130px; margin-left:4%; margin-top:15px; text-align:left; font-family:'PingFang SC Regular'; font-size:12px; color:#000; word-break:keep-all;  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"><a href="group_goods.php?act=view&id={$goods.goods_id}&act_id={$goods.act_id}" style="color:#000;" >{$goods.act_name}</a></p>
+						<div class="clear"></div>
+						<div class="price"><span class="fh">&yen;</span><span class="shop_price2">{$goods.packe_price_new}</span><span class="fh1">&yen;</span><span class="shop_price1"><del>{$goods.market_price}</del></span></div>
+						<div class="buy"><a href="group_goods.php?act=view&id={$goods.goods_id}&act_id={$goods.act_id}" style="color:#fff;" >去拼团</a></div>
+                        <div class="clear"></div>
+
+                    </div>
+                   
+			   <!-- {/if} -->
+               <!--{/foreach}-->               
+               <div class="clear"></div>
+            </div><!--miaosha-->
+ </div>
+
+</td>
+<td><a href="grouping.php" style="cursor:pointer;"><img  style=" width:140px;" src="./themesmobile/mbts1/images/temai0624_more1.png" alt=""/></a></td>
+<div class="clear"></div>
+               
+			
+			</tr>
+		</table> 
+		</div> 
+
+		<div class="clear"></div>
+{else}	 
+<div class="k750" id="part3" ><img src="./themesmobile/mbts1/images/liangfan0826_22.jpg"  alt="拼团"/></div>
+<div class="k750"><img src="./themesmobile/mbts1/images/liangfan0826_81.jpg"  alt="拼团"/></div>
+{/if}   
+        
+ <div class="clear"></div>       
+      
+   
+
+<div id='ECS_INDEX_GOODS_HUADONG'></div>
+<script type="text/javascript">
+function index_goods()
+{
+	Ajax.call('htactivity1_ajax.php?act=ajax_goods_huadong', '', index_goodsactResponse, 'GET', 'JSON', '1', '1');
+}
+
+function index_goodsactResponse(result)
+{
+	var INDEX_GOODS=document.getElementById('ECS_INDEX_GOODS_HUADONG');
+
+
+	INDEX_GOODS.innerHTML=result.index_goods;
+}
+index_goods();
+</script>
+<div id='ECS_INDEX_GOODS_LIEJU'></div>
+<script type="text/javascript">
+function index_goods2()
+{
+	Ajax.call('htactivity1_ajax.php?act=ajax_goods_lieju', '', index_goods2actResponse, 'GET', 'JSON', '1', '1');
+}
+
+function index_goods2actResponse(result)
+{
+	var INDEX_GOODS2=document.getElementById('ECS_INDEX_GOODS_LIEJU');
+	INDEX_GOODS2.innerHTML=result.index_goods;
+}
+index_goods2();
+</script>
+
+		
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.3.2.js"></script>
+<script>
+/*处理h5到小程序，进行判断*/
+function return_to_wechat_brand(bid)
+{
+var smallPro=false;
+//判断当前页面是否在小程序环境中
+wx.miniProgram.getEnv(function(res) {
+  //console.log(res.miniprogram) // true
+  if(res.miniprogram){
+  smallPro=true;
+  }else{
+  smallPro=false;
+  }
+
+});
+
+if(smallPro){
+wx.miniProgram.navigateTo({
+url:'../../brand/brand?brand_id='+bid,//跳转回小程序的页面
+
+        });
+}else{
+window.location.href = "brand.php?id="+bid;//
+}
+}
+</script>
+<script>
+/*处理h5到小程序，进行判断*/
+function return_to_wechat_category(bid)
+{
+var smallPro=false;
+//判断当前页面是否在小程序环境中
+wx.miniProgram.getEnv(function(res) {
+  //console.log(res.miniprogram) // true
+  if(res.miniprogram){
+  smallPro=true;
+  }else{
+  smallPro=false;
+  }
+
+});
+
+if(smallPro){
+wx.miniProgram.navigateTo({
+url:'../../cat/cat?php=category&id='+bid,//跳转回小程序的页面
+
+        });
+}else{
+window.location.href = "category.php?id="+bid;//
+}
+}
+</script>
+<script>
+/*处理h5到小程序，进行判断*/
+function return_to_wechat_category1(cat_id,filter_attr)
+{
+var smallPro=false;
+//判断当前页面是否在小程序环境中
+wx.miniProgram.getEnv(function(res) {
+  //console.log(res.miniprogram) // true
+  if(res.miniprogram){
+  smallPro=true;
+  }else{
+  smallPro=false;
+  }
+
+});
+
+if(smallPro){
+wx.miniProgram.navigateTo({
+url:'../../cat/cat?php=category&id=' + cat_id + '&filter_attr=' + filter_attr,//跳转回小程序的页面
+           
+        });
+}else{
+window.location.href = "category.php?id="+cat_id + "&filter_attr=" + filter_attr;//
+}
+}
+</script>
+
+
+		<div class="k750" id="part17"><img src="./themesmobile/mbts1/images/liangfan0826_36.jpg" alt="更多会场" /></div>
+        <div style="width:100%; max-width:750px; overflow:auto;  padding-bottom:15px;  -webkit-overflow-scrolling: touch; " id="d1">  
+<table>
+<tr>   
+<td><div class="pinpai2"><a href="newborn.php"><img src="./themesmobile/mbts1/images/liangfan0826_37.jpg" alt=""/></a></div></td>           
+<td><div class="pinpai2"><a href="ricesale.php"><img src="./themesmobile/mbts1/images/liangfan0826_38.jpg" alt=""/></a></div></td>
+<td><div class="pinpai2"><a href="oralcare.php"><img src="./themesmobile/mbts1/images/liangfan0826_39.jpg" alt=""/></a></div></td>
+<td><div class="pinpai2"><a href="mask.php"><img src="./themesmobile/mbts1/images/liangfan0826_40.jpg" alt=""/></a></div></td>
+<td><div class="pinpai2"><a href="hairdressing.php"><img src="./themesmobile/mbts1/images/liangfan0826_41.jpg" alt=""/></a></div></td>
+<td><div class="pinpai2"><a href="mancare.php"><img src="./themesmobile/mbts1/images/liangfan0826_42.jpg" alt=""/></a></div></td>
+<td><div class="pinpai2"><a href="slimming.php"><img src="./themesmobile/mbts1/images/liangfan0826_43.jpg" alt=""/></a></div></td>
+<td><div class="pinpai2"><a href="malehealth.php"><img src="./themesmobile/mbts1/images/liangfan0826_44.jpg" alt=""/></a></div></td>
+<td><div class="pinpai2"><a href="cate.php"><img src="./themesmobile/mbts1/images/liangfan0826_45.jpg" alt=""/></a></div></td>
+<td><div class="pinpai2"><a href="watches.php"><img src="./themesmobile/mbts1/images/liangfan0826_46.jpg" alt=""/></a></div></td>
+</tr>
+</table> 
+</div> 	
+
+    
+    
+
+        <div class="k750"><a href="clearance.php"><img src="./themesmobile/mbts1/images/queen38sj_88.jpg" alt=""/></a></div>
+        <div class="k750"><img src="./themesmobile/mbts1/images/nianhuo122sj_52.jpg" alt=""/></div>
+        <div class="daren_left"> <a href="goods.php?id=84"><img src="./themesmobile/mbts1/images/daren818sj_01.jpg" alt=""/></a> <a href="goods.php?id=734"><img src="./themesmobile/mbts1/images/daren818sj_03.jpg" alt=""/></a> <a href="goods.php?id=615"><img src="./themesmobile/mbts1/images/daren818sj_05.jpg" alt=""/></a> <a href="goods.php?id=2384"><img src="./themesmobile/mbts1/images/daren818sj_07.jpg" alt=""/></a> <a href="goods.php?id=761"><img src="./themesmobile/mbts1/images/daren818sj_09.jpg" alt=""/></a> <a href="goods.php?id=2197"><img src="./themesmobile/mbts1/images/daren818sj_11.jpg" alt=""/></a> <a href="goods.php?id=8711"><img src="./themesmobile/mbts1/images/daren818sj_13.jpg" alt=""/></a> <a href="goods.php?id=3326"><img src="./themesmobile/mbts1/images/daren818sj_15.jpg" alt=""/></a> <a href="goods.php?id=11032"><img src="./themesmobile/mbts1/images/daren818sj_17.jpg" alt=""/></a> <a href="goods.php?id=2264"><img src="./themesmobile/mbts1/images/daren818sj_19.jpg" alt=""/></a> </div>
+        <div class="daren_right"> <a href="goods.php?id=429"><img src="./themesmobile/mbts1/images/daren818sj_02.jpg" alt=""/></a> <a href="goods.php?id=958"><img src="./themesmobile/mbts1/images/daren818sj_04.jpg" alt=""/></a> <a href="goods.php?id=1083"><img src="./themesmobile/mbts1/images/daren818sj_06.jpg" alt=""/></a> <a href="goods.php?id=4508"><img src="./themesmobile/mbts1/images/daren818sj_08.jpg" alt=""/></a> <a href="goods.php?id=1334"><img src="./themesmobile/mbts1/images/daren818sj_10.jpg" alt=""/></a> <a href="goods.php?id=14035"><img src="./themesmobile/mbts1/images/daren818sj_12.jpg" alt=""/></a> <a href="goods.php?id=1353"><img src="./themesmobile/mbts1/images/daren818sj_14.jpg" alt=""/></a> <a href="goods.php?id=5594"><img src="./themesmobile/mbts1/images/daren818sj_16.jpg" alt=""/></a> <a href="goods.php?id=16910"><img src="./themesmobile/mbts1/images/daren818sj_18.jpg" alt=""/></a> <a href="goods.php?id=7006"><img src="./themesmobile/mbts1/images/daren818sj_20.jpg" alt=""/></a> </div>
+        <div class="clear"></div>
+    
+    
+        <!--<div id="video">
+            <video src="./video/5s-3D.mp4" width="100%"  controls="controls" autobuffer poster="./themesmobile/mbts1/images/video_5s-3d.jpg"></video>
+        </div>-->
+
+	</div>
+    <div id="part18"></div><!--必须有，最后的底部id-->
+
+
+<!--弹出-->
+<div id="page_dialog_bj"></div>
+<div id="guize1" class="guize_tanchuang"><a href='javascript:void(0)'   id='closeBtn'><img src='./themesmobile/mbts1/images/shijie0401_tan.png' /></a></div>  
+<div id="guize2" class='guize_tanchuang'><a href='javascript:void(0)'   id='closeBtn'><img src='./themesmobile/mbts1/images/kuanghuan1212_tan.png' /></a></div> 
+<!--弹出-->
+
+
+
+<script src="./themes/mbts1/js/easydialog.min.js"></script> 
+ <script>
+/*
+function guize1(){
+	easyDialog.open({ 
+		container : {
+			content : "<div class='manfan1'><a href='javascript:void(0)'   id='closeBtn'><img src='./themesmobile/mbts1/images/ganen1116sj_tan01.png' /></div>"
+		},
+		drag : false
+	});
+};*/
+</script>
+ <script>
+/*
+function guize2(){
+	easyDialog.open({ 
+		container : {
+			content : "<div class='manfan1'><a href='javascript:void(0)'   id='closeBtn'><img src='./themesmobile/mbts1/images/yuemo1127sj_tan02.png' /></div>"
+		},
+		drag : false
+	});
+};*/
+</script>
+ <script>
+
+function guize3(){
+	easyDialog.open({ 
+		container : {
+			content : "<div class='manfan2'><a href='javascript:void(0)'   id='closeBtn'><img src='./themesmobile/mbts1/images/zhiyou521sj_tan2.png' /></div>"
+		},
+		drag : false
+	});
+};
+</script>
+
+
+<!--订单确认、优惠券页面、支付列表共用--> 
+<script type="text/javascript">
+$("#page_dialog_bj,#page_dialog,#page_dialog_confirm,#huodong_guize,#huodong_guize1,#guize1,#guize2,#guize3,#huodong_guize2,#page_dialog_nologin").click(function(e) {
+	$("#page_dialog_bj").hide();
+	$("#page_dialog").hide();
+	$("#huodong_guize").hide();
+	$("#huodong_guize2").hide();
+    $("#guize1").hide();
+	$("#guize2").hide();
+	$("#guize3").hide();
+
+
+});
+
+
+
+function show_dialog_huodong_guize()
+{
+	var scrollTop=document.documentElement.scrollTop || document.body.scrollTop;
+	var winHeight=document.documentElement.clientHeight;
+	document.getElementById("huodong_guize").style.top=parseInt(winHeight*0.4+scrollTop)+"px";
+	$("#page_dialog_bj").show();
+	$("#huodong_guize").show();
+}
+function show_dialog_huodong_guize2()
+{
+	var scrollTop=document.documentElement.scrollTop || document.body.scrollTop;
+	var winHeight=document.documentElement.clientHeight;
+	document.getElementById("huodong_guize2").style.top=parseInt(winHeight*0.4+scrollTop)+"px";
+	$("#page_dialog_bj").show();
+	$("#huodong_guize2").show();
+}
+function show_dialog_guize1()
+{
+	var scrollTop=document.documentElement.scrollTop || document.body.scrollTop;
+	var winHeight=document.documentElement.clientHeight;
+	document.getElementById("guize1").style.top=parseInt(winHeight*0.4+scrollTop)+"px";
+	document.getElementById("page_dialog_bj").style.display='block';
+	document.getElementById("guize1").style.display = "block";
+	//$("#page_dialog_bj").show();
+	//$("#guize1").show();
+}
+function show_dialog_guize2()
+{
+	var scrollTop=document.documentElement.scrollTop || document.body.scrollTop;
+	var winHeight=document.documentElement.clientHeight;
+	document.getElementById("guize2").style.top=parseInt(winHeight*0.4+scrollTop)+"px";
+	$("#page_dialog_bj").show();
+	$("#guize2").show();
+}
+function show_dialog_guize3()
+{
+	var scrollTop=document.documentElement.scrollTop || document.body.scrollTop;
+	var winHeight=document.documentElement.clientHeight;
+	document.getElementById("guize3").style.top=parseInt(winHeight*0.4+scrollTop)+"px";
+	$("#page_dialog_bj").show();
+	$("#guize3").show();
+}
+
+</script>
+
+
+<script type="text/javascript" src="./themesmobile/mbts1/js/zepto.min.js"></script>
+<script type="text/javascript" src="./themesmobile/mbts1/js/zepto.picLazyLoad.min.js"></script>
+<script type="text/javascript">
+Zepto(function($)
+{
+	$(".lazyload_img").picLazyLoad({threshold:0,placehold:'./themesmobile/mbts1/images/blank.jpg'});
+})
+</script>
+
+</div>
+</div>
+
+{if $isPC eq 1}
+<script type="text/javascript" src="./themesmobile/mbts1/js/jquery.min.js"></script>
+<!-- #BeginLibraryItem "/library/page_footerpc.lbi" --><!-- #EndLibraryItem -->
+{/if}
+
+</body>
+</html>

@@ -1,0 +1,294 @@
+<div class="rec_container">	
+
+     	 <div class="k750" id="part4"><a href="SuperSales.php"><img src="./themesmobile/mbts1/images/liangfan0826_21.jpg" alt="精选"/></a></div>
+	 <div class="clear"></div>
+<div style="width:100%; max-width:750px;  padding-top:10px; overflow:auto; -webkit-overflow-scrolling: touch; " id="d1">  
+<table>
+<tr>              
+
+
+<div class="clear"></div>
+<!--{foreach from=$baokuan_goods item=goods}-->
+<!-- {if $goods.goods_id} -->
+<td>
+				 <div class="content">
+					<div class="ny2015_germany_body1">
+                    <div class="goods"> 
+                         <p class="goods_img"><a href="{$goods.url}" class="good_img"><img src="{$goods.goods_thumb}" alt="{$goods.act_name}"/></a></p>
+						 <!-- {if $goods.activity_price2} -->
+						 <p class="jiesheng">{$goods.activity_price2}</p>
+						 <!--{/if}-->
+		                 <p style="display:block; width:130px; margin-left:4%; margin-top:15px; text-align:left; font-family:'PingFang SC Regular'; font-size:12px; color:#000; word-break:keep-all;  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;"><a href="{$goods.url}" style="color:#000;" ><!-- {if $goods.goods_style_name} -->{$goods.goods_style_name}<!-- {else} -->{$goods.goods_name}<!-- {/if} --></a></p>
+						<div class="clear"></div>
+						<div class="price"><span class="fh">&yen;</span><!-- {if $goods.promote_price neq ""} --><span class="shop_price2">{$goods.promote_price1}</span><!--{else}--><span class="shop_price2">{$goods.shop_price1}</span><!--{/if}--><span class="fh1">&yen;</span><span class="shop_price1"><del>{$goods.market_price}</del></span></div>
+						<div class="buy"><a href="{$goods.url}" style="color:#fff;" >抢购</a></div>
+                        <div class="clear"></div>
+
+                    </div>
+					
+					<!-- {/if} -->
+                    <!--{/foreach}-->               
+                <div class="clear"></div>
+            </div><!--miaosha-->
+ </div>
+
+
+</td>
+ <td><a href="SuperSales.php"><img  style=" width:140px;" src="./themesmobile/mbts1/images/temai0624_more1.png" alt="更多精选"/></a></td>
+<div class="clear"></div>
+
+
+</tr>
+</table>
+
+
+
+</div> 
+</div>
+<script type="text/javascript">
+var direct = 16000;
+
+
+
+var flag = false; //false 向左， true向右
+function MoveDiv() {
+	var d1 = document.getElementById("d1");
+	var imgObj = d1.getElementsByTagName("img");
+	
+
+	if(!flag) {
+		d1.scrollLeft += direct;
+		if(d1.scrollLeft == d1.scrollWidth-imgObj[imgObj.length-1].width) flag = true;
+	}
+	else {
+		d1.scrollLeft -= direct;
+		if(d1.scrollLeft == 0) flag = false;
+	}
+
+}
+
+
+</script>
+
+ <div class="clear"></div> 
+<div class="k750" id="part5"><a href="Supersale.php"><img src="./themesmobile/mbts1/images/liangfan0826_23.jpg" alt="" /></a></div>
+<div class="content">
+    <div class="ny2015_germany_body4"> 
+        <!--{foreach from=$liangfan_goods item=goods}--> 
+        <!-- {if $goods.goods_id} -->
+        <div class="goods1">
+            <p class="goods_img"><a href="{$goods.url}" ><img src="{$goods.goods_thumb}" alt="{$goods.goods_name}"/></a></p>
+            <p class="jiaobiao3"><img src="./themesmobile/mbts1/images/liangfan0826_jiaobiao.png"/></p>
+            
+            <!-- {if $goods.describe2} -->
+            <p class="zhuanxiang">{$goods.describe2}</p>
+            <!--{/if}--> 
+            <!-- {if $goods.describe1} -->
+            <p class="zhuanxiang1">{$goods.describe1}</p>
+            <!--{/if}-->
+            
+            <div class="goods_name"><a href="{$goods.url}"><!-- {if $goods.goods_style_name} -->{$goods.goods_style_name}<!-- {else} -->{$goods.goods_name}<!-- {/if} --></a></div>
+            <div class="clear"></div>
+            
+            <!--{if $goods.goods_gc gt 1}-->
+            <div class="price"><!-- {if $goods.promote_price neq ""} --><span style="font-family:'PingFang SC Regular'; color:#ff3355; font-size:12px;">活动价：</span><span class="fh">&yen;</span><span class="shop_price2">{$goods.promote_price}</span><!--{else}--><span style="font-family:'PingFang SC Regular'; color:#ff3355; font-size:12px;">活动价：</span><span class="fh">&yen;</span><span class="shop_price2">{$goods.shop_price}</span><!--{/if}--><span style="font-family:'PingFang SC Regular'; font-size:12px;">/件</span><span class="market_price" style="margin-left:1%;">{$goods.market_price}</span></div>
+			<div class="buy"><a href="{$goods.url}"><img src="./themesmobile/mbts1/images/buy1218.png" ></a></div>
+            
+            <!--{else}-->
+            <div class="price"><!-- {if $goods.promote_price neq ""} --><span style="font-family:'PingFang SC Regular'; color:#ff3355; font-size:12px;">活动价：</span><span class="fh">&yen;</span><span class="shop_price2">{$goods.promote_price}</span><!--{else}--><span style="font-family:'PingFang SC Regular'; color:#ff3355; font-size:12px;">活动价：</span><span class="fh">&yen;</span><span class="shop_price2">{$goods.shop_price}</span><!--{/if}--><span class="market_price" style="margin-left:1%;">{$goods.market_price}</span></div>
+			<div class="buy"><a href="{$goods.url}"><img src="./themesmobile/mbts1/images/buy1218.png" ></a></div>
+            <!--{/if}--> 
+            
+        </div>
+        <!-- {/if} --> 
+        <!--{/foreach}-->
+        <div class="clear"></div>
+    </div>
+    <!--miaosha-->
+    <div class="k750"><a href="Supersale.php"><img src="./themesmobile/mbts1/images/liangfan0826_more1.jpg" alt="更多"/></a></div>
+</div>
+<div class="clear"></div>
+<div class="k750" id="part6"><a href="babyformula.php"><img src="./themesmobile/mbts1/images/liangfan0826_24.jpg" alt="品牌奶粉"/></a></div>
+<div class="content">
+    <div class="ny2015_germany_body4"> 
+        <!--{foreach from=$naifen_goods item=goods }--> 
+        <!-- {if $goods.goods_id} -->
+        <div class="goods1">
+		
+            <p class="goods_img"><a href="{$goods.url}" ><img src="{$goods.goods_thumb}" alt="{$goods.goods_name}"/></a></p>	
+			
+            <p class="jiaobiao3"><img src="./themesmobile/mbts1/images/liangfan0826_jiaobiao.png"/></p>
+            
+            <!-- {if $goods.describe2} -->
+            <p class="zhuanxiang">{$goods.describe2}</p>
+            <!--{/if}--> 
+            <!-- {if $goods.describe1} -->
+            <p class="zhuanxiang1">{$goods.describe1}</p>
+            <!--{/if}-->
+            
+            <div class="goods_name"><a href="{$goods.url}"><!-- {if $goods.goods_style_name} -->{$goods.goods_style_name}<!-- {else} -->{$goods.goods_name}<!-- {/if} --></a></div>
+            <div class="clear"></div>
+
+            
+            <div class="price"><!-- {if $goods.promote_price neq ""} --><span style="font-family:'PingFang SC Regular'; color:#ff3355; font-size:12px;">活动价：</span><span class="fh">&yen;</span><span class="shop_price2">{$goods.promote_price}</span><!--{else}--><span style="font-family:'PingFang SC Regular'; color:#ff3355; font-size:12px;">活动价：</span><span class="fh">&yen;</span><span class="shop_price2">{$goods.shop_price}</span><!--{/if}--><span class="market_price" style="margin-left:1%;">{$goods.market_price}</span></div>
+			<div class="buy"><a href="{$goods.url}"><img src="./themesmobile/mbts1/images/buy1218.png" ></a></div>
+            
+             
+        </div>
+        <!-- {/if} --> 
+        <!--{/foreach}-->
+        <div class="clear"></div>
+    </div>
+    <!--miaosha-->
+    <div class="k750"><a onClick="return_to_wechat_category(1)" style="cursor:pointer;"><img src="./themesmobile/mbts1/images/liangfan0826_more.jpg" alt="奶粉更多"/></a></div>
+</div>
+
+<div class="clear"></div>
+
+<div class="k750" id="part7"><a href="nutritionsale.php"><img src="./themesmobile/mbts1/images/liangfan0826_25.jpg" alt="营养"/></a></div>
+<div class="content">
+    <div class="ny2015_germany_body4"> 
+        <!--{foreach from=$yingyang_goods item=goods}--> 
+        <!-- {if $goods.goods_id} -->
+        <div class="goods1">
+            <p class="goods_img"><a href="{$goods.url}" ><img src="{$goods.goods_thumb}" alt="{$goods.goods_name}"/></a></p>
+            <p class="jiaobiao3"><img src="./themesmobile/mbts1/images/liangfan0826_jiaobiao.png"/></p>
+            
+            <!-- {if $goods.describe2} -->
+            <p class="zhuanxiang">{$goods.describe2}</p>
+            <!--{/if}--> 
+            <!-- {if $goods.describe1} -->
+            <p class="zhuanxiang1">{$goods.describe1}</p>
+            <!--{/if}-->
+            
+            <div class="goods_name"><a href="{$goods.url}"><!-- {if $goods.goods_style_name} -->{$goods.goods_style_name}<!-- {else} -->{$goods.goods_name}<!-- {/if} --></a></div>
+            <div class="clear"></div>
+            <!--{if $goods.goods_gc gt 1}-->
+            <div class="price"><!-- {if $goods.promote_price neq ""} --><span style="font-family:'PingFang SC Regular'; color:#ff3355; font-size:12px;">活动价：</span><span class="fh">&yen;</span><span class="shop_price2">{$goods.promote_price}</span><!--{else}--><span style="font-family:'PingFang SC Regular'; color:#ff3355; font-size:12px;">活动价：</span><span class="fh">&yen;</span><span class="shop_price2">{$goods.shop_price}</span><!--{/if}--><span style="font-family:'PingFang SC Regular'; font-size:12px;">/件</span><span class="market_price" style="margin-left:1%;">{$goods.market_price}</span></div>
+			<div class="buy"><a href="{$goods.url}"><img src="./themesmobile/mbts1/images/buy1218.png" ></a></div>
+            
+            <!--{else}-->
+            <div class="price"><!-- {if $goods.promote_price neq ""} --><span style="font-family:'PingFang SC Regular'; color:#ff3355; font-size:12px;">活动价：</span><span class="fh">&yen;</span><span class="shop_price2">{$goods.promote_price}</span><!--{else}--><span style="font-family:'PingFang SC Regular'; color:#ff3355; font-size:12px;">活动价：</span><span class="fh">&yen;</span><span class="shop_price2">{$goods.shop_price}</span><!--{/if}--><span class="market_price" style="margin-left:1%;">{$goods.market_price}</span></div>
+			<div class="buy"><a href="{$goods.url}"><img src="./themesmobile/mbts1/images/buy1218.png" ></a></div>
+            <!--{/if}--> 
+        </div>
+        <!-- {/if} --> 
+        <!--{/foreach}-->
+        <div class="clear"></div>
+    </div>
+    <!--miaosha-->
+    <div class="k750"><a onClick="return_to_wechat_category(37)" style="cursor:pointer;"><img src="./themesmobile/mbts1/images/liangfan0826_more.jpg" alt="营养更多"/></a></div>
+</div>
+
+<div class="clear"></div>
+<div class="k750" id="part8" ><a href="foodlist.php"><img src="./themesmobile/mbts1/images/liangfan0826_26.jpg" alt="营养 辅食" /></a></div>
+<div class="content">
+    <div class="ny2015_germany_body4"> 
+        <!--{foreach from=$fushi_goods item=goods}--> 
+        <!-- {if $goods.goods_id} -->
+        <div class="goods1">
+            <p class="goods_img"><a href="{$goods.url}" ><img src="{$goods.goods_thumb}" alt="{$goods.goods_name}"/></a></p>
+            <p class="jiaobiao3"><img src="./themesmobile/mbts1/images/liangfan0826_jiaobiao.png"/></p>
+            
+            <!-- {if $goods.describe2} -->
+            <p class="zhuanxiang">{$goods.describe2}</p>
+            <!--{/if}--> 
+            <!-- {if $goods.describe1} -->
+            <p class="zhuanxiang1">{$goods.describe1}</p>
+            <!--{/if}-->
+            
+            <div class="goods_name"><a href="{$goods.url}"><!-- {if $goods.goods_style_name} -->{$goods.goods_style_name}<!-- {else} -->{$goods.goods_name}<!-- {/if} --></a></div>
+            <div class="clear"></div>
+            
+            <!--{if $goods.goods_gc gt 1}-->
+            <div class="price"><!-- {if $goods.promote_price neq ""} --><span style="font-family:'PingFang SC Regular'; color:#ff3355; font-size:12px;">活动价：</span><span class="fh">&yen;</span><span class="shop_price2">{$goods.promote_price}</span><!--{else}--><span style="font-family:'PingFang SC Regular'; color:#ff3355; font-size:12px;">活动价：</span><span class="fh">&yen;</span><span class="shop_price2">{$goods.shop_price}</span><!--{/if}--><span style="font-family:'PingFang SC Regular'; font-size:12px;">/件</span><span class="market_price" style="margin-left:1%;">{$goods.market_price}</span></div>
+			<div class="buy"><a href="{$goods.url}"><img src="./themesmobile/mbts1/images/buy1218.png" ></a></div>
+            
+            <!--{else}-->
+            <div class="price"><!-- {if $goods.promote_price neq ""} --><span style="font-family:'PingFang SC Regular'; color:#ff3355; font-size:12px;">活动价：</span><span class="fh">&yen;</span><span class="shop_price2">{$goods.promote_price}</span><!--{else}--><span style="font-family:'PingFang SC Regular'; color:#ff3355; font-size:12px;">活动价：</span><span class="fh">&yen;</span><span class="shop_price2">{$goods.shop_price}</span><!--{/if}--><span class="market_price" style="margin-left:1%;">{$goods.market_price}</span></div>
+			<div class="buy"><a href="{$goods.url}"><img src="./themesmobile/mbts1/images/buy1218.png" ></a></div>
+            <!--{/if}-->  
+        </div>
+        <!-- {/if} --> 
+        <!--{/foreach}-->
+        <div class="clear"></div>
+    </div>
+    <!--miaosha-->
+    <div class="k750"><a onClick="return_to_wechat_category(2)" style="cursor:pointer;"><img src="./themesmobile/mbts1/images/liangfan0826_more.jpg" alt="辅食更多"/></a></div>
+</div>
+
+<div class="clear"></div>
+<div class="k750" id="part9" ><a href="diapersale.php"><img src="./themesmobile/mbts1/images/liangfan0826_27.jpg" alt="纸尿裤" /></a></div>
+<div class="content">
+    <div class="ny2015_germany_body4"> 
+        <!--{foreach from=$diaper_goods item=goods}--> 
+        <!-- {if $goods.goods_id} -->
+        <div class="goods1">
+            <p class="goods_img"><a href="{$goods.url}" ><img src="{$goods.goods_thumb}" alt="{$goods.goods_name}"/></a></p>
+            <p class="jiaobiao3"><img src="./themesmobile/mbts1/images/liangfan0826_jiaobiao.png"/></p>
+            
+            <!-- {if $goods.describe2} -->
+            <p class="zhuanxiang">{$goods.describe2}</p>
+            <!--{/if}--> 
+            <!-- {if $goods.describe1} -->
+            <p class="zhuanxiang1">{$goods.describe1}</p>
+            <!--{/if}-->
+            
+            <div class="goods_name"><a href="{$goods.url}"><!-- {if $goods.goods_style_name} -->{$goods.goods_style_name}<!-- {else} -->{$goods.goods_name}<!-- {/if} --></a></div>
+            <div class="clear"></div>
+            
+           <!--{if $goods.goods_gc gt 1}-->
+            <div class="price"><!-- {if $goods.promote_price neq ""} --><span style="font-family:'PingFang SC Regular'; color:#ff3355; font-size:12px;">活动价：</span><span class="fh">&yen;</span><span class="shop_price2">{$goods.promote_price}</span><!--{else}--><span style="font-family:'PingFang SC Regular'; color:#ff3355; font-size:12px;">活动价：</span><span class="fh">&yen;</span><span class="shop_price2">{$goods.shop_price}</span><!--{/if}--><span style="font-family:'PingFang SC Regular'; font-size:12px;">/件</span><span class="market_price" style="margin-left:1%;">{$goods.market_price}</span></div>
+			<div class="buy"><a href="{$goods.url}"><img src="./themesmobile/mbts1/images/buy1218.png" ></a></div>
+            
+            <!--{else}-->
+            <div class="price"><!-- {if $goods.promote_price neq ""} --><span style="font-family:'PingFang SC Regular'; color:#ff3355; font-size:12px;">活动价：</span><span class="fh">&yen;</span><span class="shop_price2">{$goods.promote_price}</span><!--{else}--><span style="font-family:'PingFang SC Regular'; color:#ff3355; font-size:12px;">活动价：</span><span class="fh">&yen;</span><span class="shop_price2">{$goods.shop_price}</span><!--{/if}--><span class="market_price" style="margin-left:1%;">{$goods.market_price}</span></div>
+			<div class="buy"><a href="{$goods.url}"><img src="./themesmobile/mbts1/images/buy1218.png" ></a></div>
+            <!--{/if}--> 
+        </div>
+        <!-- {/if} --> 
+        <!--{/foreach}-->
+        <div class="clear"></div>
+    </div>
+    <!--miaosha-->
+    <div class="k750"><a onClick="return_to_wechat_category(7)" style="cursor:pointer;"><img src="./themesmobile/mbts1/images/liangfan0826_more.jpg" alt="更多"/></a></div>
+</div>
+
+<div class="clear"></div>
+<div class="k750" id="part10" ><a href="babywash.php"><img src="./themesmobile/mbts1/images/liangfan0826_28.jpg" alt="护理洗护" /></a></div>
+<div class="content">
+    <div class="ny2015_germany_body4"> 
+        <!--{foreach from=$xihu_goods item=goods}--> 
+        <!-- {if $goods.goods_id} -->
+        <div class="goods1">
+            <p class="goods_img"><a href="{$goods.url}" ><img src="{$goods.goods_thumb}" alt="{$goods.goods_name}"/></a></p>
+            <p class="jiaobiao3"><img src="./themesmobile/mbts1/images/liangfan0826_jiaobiao.png"/></p>
+            
+            <!-- {if $goods.describe2} -->
+            <p class="zhuanxiang">{$goods.describe2}</p>
+            <!--{/if}--> 
+            <!-- {if $goods.describe1} -->
+            <p class="zhuanxiang1">{$goods.describe1}</p>
+            <!--{/if}-->
+            
+            <div class="goods_name"><a href="{$goods.url}"><!-- {if $goods.goods_style_name} -->{$goods.goods_style_name}<!-- {else} -->{$goods.goods_name}<!-- {/if} --></a></div>
+            <div class="clear"></div>
+            
+           <!--{if $goods.goods_gc gt 1}-->
+            <div class="price"><!-- {if $goods.promote_price neq ""} --><span style="font-family:'PingFang SC Regular'; color:#ff3355; font-size:12px;">活动价：</span><span class="fh">&yen;</span><span class="shop_price2">{$goods.promote_price}</span><!--{else}--><span style="font-family:'PingFang SC Regular'; color:#ff3355; font-size:12px;">活动价：</span><span class="fh">&yen;</span><span class="shop_price2">{$goods.shop_price}</span><!--{/if}--><span style="font-family:'PingFang SC Regular'; font-size:12px;">/件</span><span class="market_price" style="margin-left:1%;">{$goods.market_price}</span></div>
+			<div class="buy"><a href="{$goods.url}"><img src="./themesmobile/mbts1/images/buy1218.png" ></a></div>
+            
+            <!--{else}-->
+            <div class="price"><!-- {if $goods.promote_price neq ""} --><span style="font-family:'PingFang SC Regular'; color:#ff3355; font-size:12px;">活动价：</span><span class="fh">&yen;</span><span class="shop_price2">{$goods.promote_price}</span><!--{else}--><span style="font-family:'PingFang SC Regular'; color:#ff3355; font-size:12px;">活动价：</span><span class="fh">&yen;</span><span class="shop_price2">{$goods.shop_price}</span><!--{/if}--><span class="market_price" style="margin-left:1%;">{$goods.market_price}</span></div>
+			<div class="buy"><a href="{$goods.url}"><img src="./themesmobile/mbts1/images/buy1218.png" ></a></div>
+            <!--{/if}--> 
+        </div>
+        <!-- {/if} --> 
+        <!--{/foreach}-->
+        <div class="clear"></div>
+    </div>
+    <!--miaosha-->
+    <div class="k750"><a onClick="return_to_wechat_category(9)" style="cursor:pointer;"><img src="./themesmobile/mbts1/images/liangfan0826_more.jpg" alt="更多"/></a></div>
+</div>
+
+<div class="clear"></div>

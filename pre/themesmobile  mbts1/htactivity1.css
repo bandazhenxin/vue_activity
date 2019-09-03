@@ -1,0 +1,387 @@
+
+
+body,div,p,img{ margin:0px; padding:0px;}
+
+
+
+.easyDialog_wrapper{ width:10px; height:10px; }
+
+.easyDialog_wrapper .easyDialog_content{ -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; background:#fff; border:1px solid #e5e5e5; width:10px; height:10px;}
+
+.easyDialog_wrapper .easyDialog_title{ width:480px; height:0px; padding-top:30px; overflow:hidden; color:#666; font-size:18px; text-align:center;}
+.easyDialog_wrapper .easyDialog_title font{color:#c40000;}
+.easyDialog_wrapper .easyDialog_title .tit{width:200px; height:26px; margin:0px auto; line-height:26px; background:url(images/618_tanc_nologin.png) 0px 0px no-repeat; padding-left:30px; text-align:left;}
+.easyDialog_wrapper .easyDialog_title .tit_ok{width:170px; height:26px; margin:0px auto; line-height:26px; background:url(images/618_tanc_lqok.png) 0px 0px no-repeat; padding-left:30px;}
+.easyDialog_wrapper .easyDialog_title .tit_ling{width:250px; height:26px; margin:0px auto; line-height:26px; background:url(images/618_tanc_noshare.png) 0px 0px no-repeat; padding-left:30px; text-align:left;}
+
+.easyDialog_wrapper .easyDialog_text{ padding:10px 10px; font-size:12px; line-height:20px; }
+.easyDialog_wrapper .lq_nologin{ text-align:center; margin:0px;}
+.easyDialog_wrapper .lq_login_btn{ width:400px; margin:10px auto 0px;}
+.easyDialog_wrapper .lq_login_btn a{ margin:0px 10px;}
+.easyDialog_wrapper .lq_login_btn1{ text-align:center; margin-top:20px;}
+.easyDialog_wrapper .lq_ok_con { text-align:center;}
+.easyDialog_wrapper .lq_fail{ text-align:center; margin:0px;}
+.easyDialog_wrapper .lq_fail img{ width:100px;}
+
+.easyDialog_wrapper .lq_con {padding:0 0 5px 100px;}
+.easyDialog_wrapper .lingquan_ck {text-align:center;  padding:10px 0 0 0;}
+.easyDialog_wrapper .lingquan_ck a {padding-right:20px;}
+
+
+
+
+.easyDialog_wrapper .lingquan_name {padding:5px 80px;}
+.easyDialog_wrapper .lingquan_pass {padding:5px 93px;}
+.easyDialog_wrapper .get_password {padding-left:143px; padding-top:10px;}
+.easyDialog_wrapper .get_password a {padding:10px 30px 10px 0;}
+
+.easyDialog_wrapper .get_password a:hover {color:#4f4f4f; TEXT-DECORATION:none;}
+.easyDialog_wrapper .lingquan_login {float:left; padding:30px 20px 0 115px;}
+.easyDialog_wrapper .lingquan_quit {float:left;  padding:40px 0 0 0;}
+
+
+.easyDialog_wrapper .close_btn{ font-family:arial; font-size:18px; _font-size:12px; font-weight:700; color:#999; text-decoration:none; float:right; }
+
+.easyDialog_wrapper .close_btn:hover{ color:#333; }
+
+
+
+.easyDialog_wrapper .easyDialog_footer{ padding:0 10px; zoom:1; }
+
+.easyDialog_wrapper .easyDialog_footer:after{ content:''; display:block; height:0; overflow:hidden; visibility:hidden; clear:both; }
+
+.easyDialog_wrapper .btn_highlight,
+.easyDialog_wrapper .btn_normal{ border:1px solid; border-radius:2px; cursor:pointer; font-family:"PingFang SC Regular"; float:right; font-size:12px; padding:0 12px; height:24px; line-height:24px; margin-bottom:10px; }
+
+.easyDialog_wrapper .btn_highlight{ background:#4787ed; background:-webkit-gradient(linear,center bottom,center top,from(#4787ed),to(#4d90fe)); background:-moz-linear-gradient(90deg, #4787ed, #4d90fe); border-color:#3079ed; color:#fff; }
+
+.easyDialog_wrapper .btn_normal{ margin-left:10px; border-color:#c3c3c3; background:#ececec; color:#333; background:-webkit-gradient(linear,center bottom,center top,from(#ececec),to(#f3f3f3)); background:-moz-linear-gradient(90deg,#ececec,#f3f3f3); }
+.easyDialog_wrapper .guanbi{ position:absolute; margin-left:640px; margin-top:-110px;   } 
+.easyDialog_wrapper .tupian{ margin-left:-230px; margin-top:-120px;   } 
+.easyDialog_wrapper .guanbi{ position:absolute; margin-left:425px; margin-top:10px;   }
+.easyDialog_wrapper .zhuce{ position:absolute; margin-top:260px; margin-left:65px;   }
+.easyDialog_wrapper .manfan{ margin-left:-200px; margin-top:-90px;}
+.easyDialog_wrapper .manfan1 img{  width:300px; margin-left:-160px; margin-top:-64px; }
+.easyDialog_wrapper .manfan2 img{  width:300px; height:220px; margin-left:-160px; margin-top:-64px; }
+.easyDialog_wrapper .manfan3 img{  width:300px; height:177.5px; margin-left:-160px; margin-top:-64px; }
+.easyDialog_wrapper .guanbi1{ position:absolute; margin-top:-30px; margin-left:570px;}
+.easyDialog_wrapper .guanbi2{ position:absolute; margin-top:-30px; margin-left:590px;}
+.easyDialog_wrapper .guanbi3 img{ position:absolute; width:23px; height:23px; margin-top:12px; margin-left:240px;}
+
+
+
+
+
+
+
+#nav li  .txt{line-height:227%;display:inline-block;white-space:nowrap;word-break: keep-all;-moz-text-shadow: 1px 1px 1px rgba(0,0,0,0.8); -webkit-text-shadow:1px 1px 1px rgba(0,0,0,0.8);text-shadow: 1px 1px 1px rgba(0,0,0,0.8);vertical-align:middle}
+
+#nav li  .txt1{line-height:227%;display:inline-block;white-space:nowrap;word-break: keep-all;-moz-text-shadow: 1px 1px 1px rgba(0,0,0,0.8); -webkit-text-shadow:1px 1px 1px rgba(0,0,0,0.8);text-shadow: 1px 1px 1px rgba(0,0,0,0.8);vertical-align:middle}
+@media only screen and (max-width:320px) 
+{
+
+.txt{font-size:100%;} 
+.txt1{font-size:100%;}
+.txt2{font-size:80%;}
+
+}	
+@media only screen and (min-width: 321px) and (max-width: 360px) 
+{
+
+.txt{font-size:120%;} 
+.txt1{font-size:100%;} 
+.txt2{font-size:100%;}
+
+}
+@media only screen and (min-width: 361px) and (max-width: 480px) 
+{
+
+ .txt{font-size:140%;} 
+.txt1{font-size:120%;}
+.txt2{font-size:100%;}
+
+}
+@media only screen and (min-width: 481px) and (max-width: 570px) 
+{	
+
+ .txt{font-size:160%;} 
+.txt1{font-size:140%;}
+.txt2{font-size:120%;}
+
+}
+@media only screen and (min-width: 571px) and (max-width: 640px) 
+{	
+.txt{font-size:180%;} 
+.txt1{font-size:140%;}
+.txt2{font-size:120%;}
+
+}
+@media only screen and (min-width: 641px)
+{
+
+ .txt{font-size:200%;} 
+.txt1{font-size:160%;}
+.txt2{font-size:120%;}
+
+}
+
+
+
+
+.swiper-container {
+        width: 100%;
+        height: 100%;
+        
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+	.swiper-slide img{ width:100%;}
+
+
+/** 一级导航样式 */
+.ui-navigator {
+    width:100%;
+	height:54px;
+	line-height:44px;
+}
+.ui-navigator .ui-navigator-list li, .ui-navigator .ui-navigator-fix{
+	height:54px;
+	line-height:44px;
+	padding:5px 10px;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    font-family:"PingFang SC Regular";
+    text-align: center;
+}
+.ui-navigator .ui-navigator-list li:hover, .ui-navigator .ui-navigator-fix{
+	height:54px;
+	line-height:44px;
+	padding:5px 10px;
+    font-size: 12px;
+    text-decoration: none;
+    outline: none;
+    font-family:"PingFang SC Regular";
+    text-align: center;
+}
+/*css for pad*/
+@media all and (min-device-width: 768px) and (max-device-width: 1024px){
+    .ui-navigator .ui-navigator-list li, .ui-navigator .ui-navigator-fix{
+        font-size: 12px;
+    }
+}
+
+.ui-navigator .ui-navigator-list li a.cur, .ui-navigator .ui-navigator-fix.cur{
+    height:54px;
+	line-height:44px;
+	padding:5px 10px;
+	margin:-5px -10px;
+    font-size: 12px;
+    background-color: #1e4195;
+    text-decoration: none;
+    outline: none;
+    font-family:"PingFang SC Regular";
+    text-align: center;
+}
+
+
+
+/* 弹出 */
+#page_dialog_bj{ width:100%; height:100%; position:fixed; _position:absolute; top:0px; left:0px; background-color:#000; opacity:0.5; filter:alpha(opacity=50); z-index:999; display:none;}
+.guize_tanchuang{ width:80%; position:absolute; left:50%; margin-left:-40%; background:none; font-family:"PingFang SC Regular"; text-align:center; border-radius:10px; z-index:1000; display:none;}
+.guize_tanchuang img{ display:block; width:100%; max-width:320px; margin:0px auto;}
+
+.HD_containers{ width:100%;}
+.HD_bgcolor{ background-color:#dceaf7;}
+.HD_container{ width:100%; max-width:750px; margin:0px auto;}
+
+.HD_container .topnav_float{ position:fixed; top:0px; left:0px; z-index:10;}
+.HD_container .topnav{ width:100%; height:54px; line-height:44px; padding:0px; background-color:#1e62a3; font-family:"PingFang SC Regular"; font-size:16px;}
+.HD_container .topnav .tn{ position:relative;}
+.HD_container .topnav .nav_smart li{ list-style:none;}
+.HD_container .topnav .nav_smart li img{width:30px; padding-left:8px; display:block;}
+.HD_container .topnav .nav_smart li a{cursor:pointer; display:block; color:#fff; text-decoration:none;}
+
+.HD_container .HD_content{ width:100%; max-width:750px; margin:0px auto;}
+
+.HD_container .gundong{width:100%; position:absolute;height:70px;overflow:hidden;border:1px solid #000000}
+
+
+.HD_container .HD_content .shijian{ width:100%; max-width:750px; margin:15px auto; text-align:center;  }
+.HD_container .HD_content .shijian .djs{   text-align:center; font-size:16px; font-family:"PingFang SC Regular"; color:#164676;  }
+.HD_container .HD_content .shijian .djs font{  font-size:16px; color:#164676; font-family:Arial; padding:0px 2px; background:#b9d7f3; padding:5px; border-radius:100px; -moz-border-radius:100px; -webkit-border-radius:100px;}
+.HD_container .HD_content .shijian .djs font1{   padding:0px 2px;}
+
+.HD_container .HD_content a{ cursor:pointer;}
+.HD_container .HD_content .more_goods_choose{ display:block; width:60%; height:30px; margin:20px auto; background-color:#5d4bff; color:#13078f; font-size:14px; text-align:center; line-height:30px;}
+.HD_container .k750 img{ display:block; width:100%;}
+.HD_container .k150 img{ display:block; width:20%; float:left;}
+.HD_container .k250 img{ display:block; width:33.3333333333%; float:left;}
+.HD_container .k188 img{ display:block; width:25.066666667%; float:left; }
+.HD_container .k187 img{ display:block; width:24.933333333%; float:left; }
+.HD_container .k720 img{ display:block; width:96%; margin:0px 2%;}
+.HD_container .k295 img{ display:block; width:39.333%; float:left;}
+.HD_container .k455 img{ display:block; width:60.667%; float:left; margin-bottom:15px;}
+.HD_container .k220 img{display:block; width:29.333%; float:left; margin-bottom:15px;}
+.HD_container .k265 img{display:block; width:35.333%; float:left; margin-bottom:15px;}
+.HD_container .k375 img{ display:block; width:50%; float:left;}
+.HD_container .k260 img{ display:block; width:34.6666666667%; float:left;}
+.HD_container .k230 img{ display:block; width:30.6666666666%; float:left;}
+
+
+
+.HD_container .pinpai1 img{ height:66px; margin-left:2px;}
+.HD_container .pinpai2 img{ height:125px; margin-left:2px;}
+
+.HD_container .content{ width:100%; margin:0px auto;}
+.HD_container .content .ny2015_germany_body4{ width:100%; margin:0px auto;  }
+.HD_container .content .ny2015_germany_body1{ width:100%; margin:0px auto;}
+.HD_container .content .goods{ width:140px; height:209px;  -moz-border-radius:8px; -webkit-border-radius:8px;  overflow:hidden; background-color:#fff; margin-top:-4px; position:relative; margin-left:4px;   }
+
+.HD_container .content .goods .bang_no{ position:absolute; left:0px; top:0px; width:30px; z-index:2}
+.HD_container .content .goods .bang_no img{ width:30px;}
+
+.HD_container .content .goods .ger_tc_js{ position:absolute; top:0px; left:50%; margin-left:-80px; z-index:2;}
+.HD_container .content .goods .ger_tc_js img{ width:160px; height:160px; opacity:0.85; filter:alpha(opacity=85);}
+.HD_container .content .goods .goods_img img{ width:120px; height:120px; margin-top:10px; margin-left:8px;  }
+.HD_container .content .goods .price{ width:86px;height:30px;  font-family:Arial; color:#f15bab; text-align:center; margin-left:3px; float:left;}
+
+.HD_container .content .goods .price .pknx{ display:block;color:#d7d7d7; font-family:"PingFang SC Regular"; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; float:left;}
+.HD_container .content .goods .price .pkn{ display:block; padding-top:2px;  color:#969696; font-family:"PingFang SC Regular";  float:left; font-size:12px;}
+.HD_container .content .goods .price .pkn1{ display:block; color:#ff2837; font-family:"PingFang SC Regular";  float:left; font-size:12px;  }
+
+
+
+.HD_container .content .goods .biaoti{ font-size:14px; padding:0 10px; text-align:left; line-height:16px; height:16px; overflow:hidden; color:#000; margin-bottom:5px; }
+.HD_container .content .goods .price .fh{ font-size:12px; color:#ff2837; float:left; margin-left:4px; margin-top:15px;}
+.HD_container .content .goods .price .fh1{ font-size:12px; color:#808080; float:left; margin-left:4px; margin-top:15px; }
+.HD_container .content .goods .price .fhpt{ font-size:12px; color:#ff2837; float:left; margin-left:4px; margin-top:1.5px;}
+
+.HD_container .content .goods .jiaobiao img{ position:absolute; top:10px; width:37.95px; height:16.95px; left:2px;  }
+.HD_container .content .goods .jiaobiao2 img{ position:absolute;   width:65px; height:45.5px; right:4px;  }
+.HD_container .content .goods .jiaobiao2 .quanhou{ line-height:16px; font-family:"PingFang SC Regular"; position:absolute; right:15px; margin-top:5px; color:#fff; font-size:14px;}
+.HD_container .content .goods .jiaobiao4 img{ position:absolute; top:107px;  width:31.5px; height:23px;  left:0px; }
+
+.HD_container .content .goods .jiesheng{  position:absolute; width:88%; margin:0px 6%; border:1px solid #ff2837;  text-align:center; font-family:"PingFang SC Regular"; font-size:12px; color:#ff2837; margin-top:-15px; border-radius:80px; -moz-border-radius:80px; -webkit-border-radius:80px;}
+.HD_container .content .goods .price .shop_price1{ font-size:12px; color:#808080;  float:left; margin-top:15px;}
+.HD_container .content .goods .price .shop_price2{ font-size:13px; color:#ff2837; float:left; margin-top:13.5px; margin-right:1px; }
+.HD_container .content .goods .price .shop_price2pt{ font-size:14px; color:#ff2837; font-weight:bold;  float:left; margin-top:0px; }
+.HD_container .content .goods .price .market_price1{ margin-left:10%; font-size:12px;   color:#b1b1b1; text-decoration:line-through;}
+.HD_container .content .goods .price .market_price{ font-size:12px; padding-top:23px;  color:#b1b1b1; text-decoration:line-through;}
+.HD_container .content .goods .price .goods_gc{ color:#ff0000; display:block; float:right; font-size:12px; padding-top:25px; font-family:"PingFang SC Regular"; }
+
+.HD_container .content .goods .goods_name {height:32px; padding:0 10px; text-align:left; line-height:16px; overflow:hidden; margin-top:10px;}
+.HD_container .content .goods .goods_name a {font-family:Arial; font-size:13px; color:#535353; text-decoration:none;}
+.HD_container .content .goods .goods_name a span{color:#999a99;}
+.HD_container .content .goods .huodong{ position:absolute; width:60px;height:15px; border:solid 1px #fa3362; line-height:15px; color:#fa3362; margin-top:-7px; margin-left:10px; text-align:center; font-size:12px; }
+.HD_container .content .goods .huodong1{ position:absolute; width:36px;height:15px; border:solid 1px #fa3362; line-height:15px; color:#fa3362; margin-top:-7px; margin-left:10px; text-align:center; font-size:12px;}
+.HD_container .content .goods .huodong2{ position:absolute; width:66px;height:15px; border:solid 1px #fa3362; line-height:15px; color:#fa3362; margin-top:-7px; margin-left:10px; text-align:center; font-size:12px;}
+.HD_container .content .goods .zhuanxiang{  color:#ff2837; width:24%; border: 1px solid #ff2837; float:right;  margin-top:-20px;  text-align:center; margin-right:5px;}
+.HD_container .content .goods .zhuanxiang a { color:#ff2837;}
+.HD_container .content .goods .goods_ggy{ width:98%; height:25px; line-height:25px; background-color:#f7f3f2; color:#646464; font-size:12px; font-family:"PingFang SC Regular"; padding-left:2%; margin-top:5px; text-align:left;}
+.HD_container .content .goods .buy{ width:46px; margin:5px 5px 5px 0px; height:25px; line-height:25px; color:#fff; font-family:"PingFang SC Regular"; font-weight:bold; font-size:12px;  background-color:#ff2837; text-align:center; float:right;  border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px;}
+.HD_container .content .goods .buy1{ width:20%; margin:5px auto; height:25px; line-height:25px; color:#fff; font-family:"PingFang SC Regular"; font-weight:bold; font-size:12px;  background-color:#f15bab; float:right; margin-top:-32px; margin-right:3px;   border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; padding-left:4px; padding-right:2px;}
+.HD_container .content .goods  .buy a{ color:#fff;}
+.HD_container .content .goods  .buy1 a{ color:#fff;}
+.HD_container .content .goods .buy1 img{ width:20%; float:right; margin-right:6%; margin-top:-21%;}
+
+
+.HD_container .content .goods1{ width:47%; overflow:hidden;  margin-left:2%; margin-top:10px; padding-bottom:10px; background-color:#fff; float:left;  text-align:center; position:relative;  }
+.HD_container .content .goods1 .jiaobiao3 img{ position:absolute; top:0px;  width:50px;  left:0px; }
+
+.HD_container .content .goods1 .ger_tc_js{ position:absolute; top:0px; left:50%; margin-left:-80px; z-index:2;}
+.HD_container .content .goods1 .ger_tc_js img{ width:160px; height:160px; opacity:0.85; filter:alpha(opacity=85);}
+.HD_container .content .goods1 .goods_img img{ width:160px; height:160px; margin-top:15px; }
+.HD_container .content .goods1 .price{ width:96%;height:20px; padding-left:4%; font-family:Arial; color:#ff2837; text-align:left; margin-top:4px;   }
+.HD_container .content .goods1 .biaoti{ font-size:14px; padding:0 10px; text-align:left; line-height:16px; height:16px; overflow:hidden; color:#000; margin-bottom:5px; }
+.HD_container .content .goods1 .price .fh{ font-size:12px; color:#ff2837; margin-left:-2%;    }
+.HD_container .content .goods1 .price .fh1{ font-size:16px;  margin-left:10%; }
+
+.HD_container .content .goods1 .price .shop_price2{ font-size:15px; color:#ff2837; font-weight:bold;  }
+.HD_container .content .goods1 .price .market_price1{ margin-left:10%; font-size:12px;   color:#b1b1b1; text-decoration:line-through;}
+.HD_container .content .goods1 .price .market_price{margin-left:1%; font-size:12px; padding-top:23px;  color:#b1b1b1; text-decoration:line-through;}
+.HD_container .content .goods1 .price .goods_gc{ color:#ff0000; display:block; float:right; font-size:12px; padding-top:25px; font-family:"PingFang SC Regular"; }
+.HD_container .content .goods1 .price .daoshou{   padding:3px 2% 5px 2%; color:#ff2837;  border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px;  font-size:14px;  float:right;   margin-right:2%; }
+
+.HD_container .content .goods1 .price1{ width:96%;height:20px; padding-left:4%; font-family:Arial; color:#808080; text-align:left; margin-top:-15px; }
+.HD_container .content .goods1 .price1 .fh{ font-size:12px; color:#808080; margin-left:2.2%;}
+
+
+.HD_container .content .goods1 .price1 .shop_price2{ font-size:12px; color:#808080; margin-left:2%; }
+.HD_container .content .goods1 .price1 .market_price1{ margin-left:10%; font-size:12px;   color:#b1b1b1; text-decoration:line-through;}
+.HD_container .content .goods1 .price1 .market_price{margin-left:1%; font-size:12px; padding-top:23px;  color:#b1b1b1; text-decoration:line-through;}
+.HD_container .content .goods1 .price1 .goods_gc{ color:#ff0000; display:block; float:right; font-size:12px; padding-top:25px; font-family:"PingFang SC Regular"; }
+
+
+.HD_container .content .goods1 .goods_name {height:32px; padding:0 10px; text-align:left; line-height:16px; overflow:hidden; margin-top:10px;}
+.HD_container .content .goods1 .goods_name a {font-family:Arial; font-size:13px; color:#141414; text-decoration:none;}
+.HD_container .content .goods1 .goods_name a span{color:#141414;}
+.HD_container .content .goods1 .zhuanxiang{ position:absolute; color:#fff; padding:1% 3%;   margin-top:-30px; margin-bottom:5px; border-radius: 0px 80px 80px 0px; background: linear-gradient(to right, #f1564a , #f03275); opacity:0.8;filter:alpha(opacity=80); }
+.HD_container .content .goods1 .zhuanxiang1{ position:absolute; color:#fff; padding:1% 3%;   margin-top:-55px; margin-bottom:5px; border-radius: 0px 80px 80px 0px; background: linear-gradient(to right, #f8863f , #e22926); opacity:0.8;filter:alpha(opacity=80); }
+.HD_container .content .goods1 .buy{ width:50px; height:24px; text-align:right; position:absolute; right:5px; bottom:5px;}
+.HD_container .content .goods1 .buy a{ display:block;}
+.HD_container .content .goods1 .buy img{ display:inline-block; width:75%; }
+
+.huichang_more{ width:98%; margin:0px 1%;}
+.huichang_more .huichang img{ display:block; width:31.333333%; margin:1% 1%; float:left;}
+.huichang_more .huichang2{ text-align:center;}
+.huichang_more .huichang2 img{width:31.333333%; padding:1% 0px;}
+
+.HD_container .daren_left{ width:50%; float:left;}
+.HD_container .daren_right{ width:50%; float:left;}
+.HD_container .daren_left a,.HD_container .daren_right a{ display:block; width:100%;}
+.HD_container .daren_left img,.HD_container .daren_right img{ display:block; width:100%;}
+
+
+
+
+
+
+.dialog_bj1{ width:100%; height:100%; position:fixed; _position:absolute; top:0px; left:0px; background-color:#000; opacity:0.5; filter:alpha(opacity=50); z-index:999;}
+.dialog1{ width:300px; height:200px; position:absolute; left:50%; margin:-100px 0px 0px -150px; background-color:#fff; font-family:"PingFang SC Regular";  border-radius:5px; z-index:10000}
+.dialog1 .biaoti{ font-family:"PingFang SC Regular"; font-size:18px; color:#d82828; margin-top:30px; margin-left:30px; }
+.dialog1 .p1{ font-family:"PingFang SC Regular"; font-size:14px; color:#535353;  line-height:25px; margin-top:15px; margin-left:30px;}
+.dialog1 .p2{ font-family:"PingFang SC Regular"; font-size:14px; color:#535353; line-height:20px;  margin-left:30px;}
+.dialog1 .guanbi{ font-family:"PingFang SC Regular"; font-size:14px; color:#000; float:right; margin-right:20px; margin-top:-148px;}
+.dialog1 .ewm{width:200px; height:200px; text-align:center; position:absolute; left:50%; margin-left:-100px; margin-top:-100px; z-index:10000; display:none;}
+.dialog1 .ewm img{ width:200px;}
+.dialog2{ width:300px; height:100px; position:absolute; left:50%; margin:-10px 0px 0px -150px; background-color:#fff; font-family:"PingFang SC Regular";  border-radius:5px; z-index:10000}
+.dialog2 .biaoti{ font-family:"PingFang SC Regular"; font-size:18px; color:#d82828; margin-top:15px; margin-left:30px; }
+.dialog2 .p1{ font-family:"PingFang SC Regular"; font-size:14px; color:#535353;  line-height:30px; margin-top:10px; margin-left:30px;}
+.dialog2 .p2{ font-family:"PingFang SC Regular"; font-size:14px; color:#535353; line-height:20px;  margin-top:10px;  margin-left:30px;}
+.dialog2 .guanbi1{ font-family:"PingFang SC Regular"; font-size:14px; color:#000; float:right; margin-right:25px; margin-top:-65px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
