@@ -149,3 +149,24 @@
 [ 2019-09-03T11:54:51+08:00 ] /index.php/api/home-render | SQL: SHOW COLUMNS FROM `ecs_nav_list` [ RunTime:0.007225s ]
 [ 2019-09-03T11:54:51+08:00 ] /index.php/api/home-render | SQL: SHOW COLUMNS FROM `ecs_home_config` [ RunTime:0.008746s ]
 [ 2019-09-03T11:54:51+08:00 ] /index.php/api/home-render | SQL: SELECT `conf_key`,`type`,`conf_value` FROM `ecs_home_config` WHERE ( `conf_key` IN ('home_banner','activity_deadline') )  [ RunTime:0.007921s ]
+[ 2019-09-03T22:40:02+08:00 ] /index.php/api/spell-group | NOTIC: [2048] Only variables should be passed by reference api.php 第 31 行.
+[ 2019-09-03T22:40:02+08:00 ] /index.php/api/spell-group | INFO: Tag[ route_check ] --START--
+[ 2019-09-03T22:40:02+08:00 ] /index.php/api/spell-group | INFO: Run CheckRoute Behavior [ RunTime:0.000826s ]
+[ 2019-09-03T22:40:02+08:00 ] /index.php/api/spell-group | INFO: Tag[ route_check ] --END-- [ RunTime:0.000885s ]
+[ 2019-09-03T22:40:02+08:00 ] /index.php/api/spell-group | INFO: Tag[ app_begin ] --START--
+[ 2019-09-03T22:40:02+08:00 ] /index.php/api/spell-group | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000497s ]
+[ 2019-09-03T22:40:02+08:00 ] /index.php/api/spell-group | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000548s ]
+[ 2019-09-03T22:40:02+08:00 ] /index.php/api/spell-group | SQL: SHOW COLUMNS FROM `ecs_nav_list` [ RunTime:0.005805s ]
+[ 2019-09-03T22:40:02+08:00 ] /index.php/api/spell-group | SQL: SHOW COLUMNS FROM `ecs_home_config` [ RunTime:0.005959s ]
+[ 2019-09-03T22:40:02+08:00 ] /index.php/api/spell-group | SQL: SELECT * FROM `ecs_home_config` WHERE ( `conf_key` = 'spell_group_ids' ) LIMIT 1   [ RunTime:0.005423s ]
+[ 2019-09-03T22:51:35+08:00 ] /index.php/api/spell-group | NOTIC: [2048] Only variables should be passed by reference api.php 第 31 行.
+[ 2019-09-03T22:51:35+08:00 ] /index.php/api/spell-group | INFO: Tag[ route_check ] --START--
+[ 2019-09-03T22:51:35+08:00 ] /index.php/api/spell-group | INFO: Run CheckRoute Behavior [ RunTime:0.000872s ]
+[ 2019-09-03T22:51:35+08:00 ] /index.php/api/spell-group | INFO: Tag[ route_check ] --END-- [ RunTime:0.000937s ]
+[ 2019-09-03T22:51:35+08:00 ] /index.php/api/spell-group | INFO: Tag[ app_begin ] --START--
+[ 2019-09-03T22:51:35+08:00 ] /index.php/api/spell-group | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000494s ]
+[ 2019-09-03T22:51:35+08:00 ] /index.php/api/spell-group | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000542s ]
+[ 2019-09-03T22:51:35+08:00 ] /index.php/api/spell-group | SQL: SHOW COLUMNS FROM `ecs_nav_list` [ RunTime:0.005545s ]
+[ 2019-09-03T22:51:35+08:00 ] /index.php/api/spell-group | SQL: SHOW COLUMNS FROM `ecs_home_config` [ RunTime:0.005569s ]
+[ 2019-09-03T22:51:35+08:00 ] /index.php/api/spell-group | SQL: SHOW COLUMNS FROM `ecs_goods_packagetour` [ RunTime:0.005229s ]
+[ 2019-09-03T22:51:35+08:00 ] /index.php/api/spell-group | SQL: SELECT * FROM `ecs_home_config` WHERE ( `conf_key` = 'spell_group_ids' ) LIMIT 1   [ RunTime:0.005632s ]

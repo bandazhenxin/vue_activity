@@ -6,6 +6,10 @@ class HomeConfigService{
         $this->model = D('HomeConfig');
     }
 
+    /**
+     * 获取首页配置
+     * @return array|bool
+     */
     public function getRenderConfig(){
         //get data
         $config_res = false;
@@ -23,5 +27,15 @@ class HomeConfigService{
         }
 
         return $config_res;
+    }
+
+    public function getKey($key){
+        if(!is_string($key)) return false;
+
+        $res = '';
+        $data = $this->model->where(array('conf_key' => $key))->find();
+        if($data) $res = $data['conf_value'];
+
+        return $res;
     }
 }

@@ -2,7 +2,7 @@
 Vendor('Api.Response');
 
 /**
- * APIÊä³ö
+ * APIï¿½ï¿½ï¿½
  * @param $code
  * @param $message
  * @param array $data
@@ -13,7 +13,7 @@ function response($code, $message, $data = array(), $type = 'json'){
 }
 
 /**
- * »ñÈ¡ÇëÇó·½Ê½
+ * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Ê½
  * @return string
  */
 function getMethod(){
@@ -21,7 +21,7 @@ function getMethod(){
 }
 
 /**
- * »ñÈ¡µ±Ç°Â·ÓÉ
+ * ï¿½ï¿½È¡ï¿½ï¿½Ç°Â·ï¿½ï¿½
  * @return array|string
  */
 function getRoute(){
@@ -33,23 +33,23 @@ function getRoute(){
 }
 
 /**
- * »ñÈ¡headerÐÅÏ¢
+ * ï¿½ï¿½È¡headerï¿½ï¿½Ï¢
  * @return array
  */
 function getHeader(){
-    // ºöÂÔ»ñÈ¡µÄheaderÊý¾Ý¡£Õâ¸öº¯ÊýºóÃæ»áÓÃµ½¡£Ö÷ÒªÊÇÆð¹ýÂË×÷ÓÃ
+    // ï¿½ï¿½ï¿½Ô»ï¿½È¡ï¿½ï¿½headerï¿½ï¿½ï¿½Ý¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     $ignore  = array('host','accept','content-length','content-type');
     $headers = array();
 
     foreach($_SERVER as $key=>$value){
         if(substr($key, 0, 5)==='HTTP_'){
-            //ÕâÀïÈ¡µ½µÄ¶¼ÊÇ'http_'¿ªÍ·µÄÊý¾Ý¡£
+            //ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½'http_'ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
             $key = substr($key, 5);
             $key = str_replace('_', ' ', $key);
             $key = str_replace(' ', '-', $key);
             $key = strtolower($key);
 
-            //ÕâÀïÖ÷ÒªÊÇ¹ýÂËÉÏÃæÐ´µÄ$ignoreÊý×éÖÐµÄÊý¾Ý
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½Ç¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½$ignoreï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½
             if(!in_array($key, $ignore))
                 $headers[$key] = $value;
         }
@@ -59,7 +59,7 @@ function getHeader(){
 }
 
 /**
- * »ñÈ¡postÇëÇó²ÎÊý
+ * ï¿½ï¿½È¡postï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * @return mixed
  */
 function getPost(){
@@ -75,7 +75,7 @@ function getPost(){
 }
 
 /**
- * »ñÈ¡getÇëÇó²ÎÊý
+ * ï¿½ï¿½È¡getï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * @return mixed
  */
 function getGet(){
@@ -83,7 +83,7 @@ function getGet(){
 }
 
 /**
- * »ñÈ¡ËùÓÐÇëÇó²ÎÊý
+ * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * @return array
  */
 function getRequest(){
@@ -91,7 +91,7 @@ function getRequest(){
 }
 
 /**
- * »ñÈ¡tokenÇëÇó²ÎÊý
+ * ï¿½ï¿½È¡tokenï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 function getRequestToken(){
     $header  = getHeader();
@@ -101,7 +101,7 @@ function getRequestToken(){
 }
 
 /**
- * ÊµÀý»¯service
+ * Êµï¿½ï¿½ï¿½ï¿½service
  * @param $service_name
  * @return mixed
  */
@@ -109,7 +109,7 @@ function Service($service_name){
     if(!is_string($service_name))
         response(500, 'service error');
 
-    $service_name = rtrim($service_name, 'Service') . 'Service';
+    $service_name = str_replace('Service', '', $service_name) . 'Service';
     if(import('App.Services.' . $service_name))
         return new $service_name();
 

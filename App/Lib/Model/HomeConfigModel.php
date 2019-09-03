@@ -1,4 +1,4 @@
 <?php
-class NavListModel{
+class HomeConfigModel{
     protected $tableNamw = 'home_config';
 }
