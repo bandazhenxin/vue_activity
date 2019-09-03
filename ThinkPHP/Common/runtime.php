@@ -215,7 +215,7 @@ function build_app_dir() {
         if(!is_file(CONF_PATH.'config.php'))
             file_put_contents(CONF_PATH.'config.php',"<?php\nreturn array(\n\t//'配置项'=>'配置值'\n);\n?>");
         // 写入测试Action
-        if(!is_file(LIB_PATH.'Action/IndexAction.class.php'))
+        if(!is_file(LIB_PATH.'Action/TestAction.class.php'))
             build_first_action();
     }else{
         header('Content-Type:text/html; charset=utf-8');
@@ -226,7 +226,7 @@ function build_app_dir() {
 // 创建测试Action
 function build_first_action() {
     $content = file_get_contents(THINK_PATH.'Tpl/default_index.tpl');
-    file_put_contents(LIB_PATH.'Action/IndexAction.class.php',$content);
+    file_put_contents(LIB_PATH.'Action/TestAction.class.php',$content);
 }
 
 // 加载运行时所需文件

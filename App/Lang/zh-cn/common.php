@@ -1,2 +1,4 @@
 <?php
-return array();
+return array(
+    'Successful' => '²Ù×÷³É¹¦',
+);

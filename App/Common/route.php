@@ -3,6 +3,14 @@ Vendor('Route.Router');
 Vendor('Api.Jwt');
 
 function setRoute($route_ruler){
+    //cors
+    header('Access-Control-Allow-Origin:*');
+    header('Access-Control-Allow-Methods: GET, POST, PUT,DELETE,OPTIONS,PATCH');
+    header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, Authorization");
+
+    //header basic
+    header('Content-Type:application/json');
+
     //init
     $type_range = array('get', 'post', 'put', 'delete', 'head', 'patch');
     if(!is_array($route_ruler)) response(500, 'params error', array());

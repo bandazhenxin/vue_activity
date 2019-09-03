@@ -28,11 +28,7 @@ function getRoute(){
     $url       = $_SERVER['REQUEST_URI'];
     $url_info  = parse_url($url);
     $url_path  = $url_info['path'];
-    $url_route = array();
-    foreach(explode('/', $url_path) as $path){
-        if('index.php' != $path) $url_route[] = $path;
-    }
-    $url_route = implode('/', $url_route);
+    $url_route = end(explode('index.php', $url_path));
     return $url_route;
 }
 
@@ -102,4 +98,20 @@ function getRequestToken(){
     $request = getRequest();
     $res_token = !empty($request['token']) ? $request['token'] : false;
     return $header['Authorizatio'] ? $header['Authorizatio'] : $res_token;
+}
+
+/**
+ * ÊµÀý»¯service
+ * @param $service_name
+ * @return mixed
+ */
+function Service($service_name){
+    if(!is_string($service_name))
+        response(500, 'service error');
+
+    $service_name = rtrim($service_name, 'Service') . 'Service';
+    if(import('App.Services.' . $service_name))
+        return new $service_name();
+
+    response(500, 'service error');
 }

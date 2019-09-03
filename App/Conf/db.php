@@ -6,5 +6,5 @@ return array(
     'DB_USER'   => 'root',
     'DB_PWD'    => 'ws123',
     'DB_PORT'   => '3306',
-    'DB_PREFIX' => '',
+    'DB_PREFIX' => 'ecs_',
 );
