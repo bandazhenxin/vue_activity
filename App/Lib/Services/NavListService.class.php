@@ -14,7 +14,7 @@ class NavListService{
         $map = array();
         $map['is_use'] = 1;
         $list = $this->model
-                ->field('id,name,type,route,content')
+                ->field('id,name,type,banner,route,content,template')
                 ->where($map)
                 ->order('sort ASC')
                 ->select();

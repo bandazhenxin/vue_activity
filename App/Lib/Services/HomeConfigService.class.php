@@ -34,7 +34,10 @@ class HomeConfigService{
 
         $res = '';
         $data = $this->model->where(array('conf_key' => $key))->find();
-        if($data) $res = $data['conf_value'];
+        if($data){
+            $res = $data['conf_value'];
+            if(json_decode($res, true)) $res = json_decode($res, true);
+        }
 
         return $res;
     }
