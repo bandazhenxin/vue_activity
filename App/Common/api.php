@@ -2,7 +2,7 @@
 Vendor('Api.Response');
 
 /**
- * API���
+ * API???
  * @param $code
  * @param $message
  * @param array $data
@@ -13,7 +13,7 @@ function response($code, $message, $data = array(), $type = 'json'){
 }
 
 /**
- * ��ȡ����ʽ
+ * ????????
  * @return string
  */
 function getMethod(){
@@ -21,7 +21,7 @@ function getMethod(){
 }
 
 /**
- * ��ȡ��ǰ·��
+ * ?????????
  * @return array|string
  */
 function getRoute(){
@@ -33,23 +33,23 @@ function getRoute(){
 }
 
 /**
- * ��ȡheader��Ϣ
+ * ???header???
  * @return array
  */
 function getHeader(){
-    // ���Ի�ȡ��header���ݡ��������������õ�����Ҫ�����������
+    // ????????header????????????????????????????????????
     $ignore  = array('host','accept','content-length','content-type');
     $headers = array();
 
     foreach($_SERVER as $key=>$value){
         if(substr($key, 0, 5)==='HTTP_'){
-            //����ȡ���Ķ���'http_'��ͷ�����ݡ�
+            //????????????'http_'??????????
             $key = substr($key, 5);
             $key = str_replace('_', ' ', $key);
             $key = str_replace(' ', '-', $key);
             $key = strtolower($key);
 
-            //������Ҫ�ǹ�������д��$ignore�����е�����
+            //????????????????��??$ignore?????��?????
             if(!in_array($key, $ignore))
                 $headers[$key] = $value;
         }
@@ -59,7 +59,7 @@ function getHeader(){
 }
 
 /**
- * ��ȡpost�������
+ * ???post???????
  * @return mixed
  */
 function getPost(){
@@ -75,7 +75,7 @@ function getPost(){
 }
 
 /**
- * ��ȡget�������
+ * ???get???????
  * @return mixed
  */
 function getGet(){
@@ -83,7 +83,7 @@ function getGet(){
 }
 
 /**
- * ��ȡ�����������
+ * ??????????????
  * @return array
  */
 function getRequest(){
@@ -91,7 +91,7 @@ function getRequest(){
 }
 
 /**
- * ��ȡtoken�������
+ * ???token???????
  */
 function getRequestToken(){
     $header  = getHeader();
@@ -101,7 +101,7 @@ function getRequestToken(){
 }
 
 /**
- * ʵ����service
+ * ?????service
  * @param $service_name
  * @return mixed
  */

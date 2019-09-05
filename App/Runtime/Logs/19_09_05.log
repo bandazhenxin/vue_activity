@@ -1,0 +1,1 @@
+[ 2019-09-05T16:00:53+08:00 ] /index.php/api/goods-render/discount | ERR: (ThinkException) Can't connect to MySQL server on 'rm-bp1ekm8l2uc280jmt.mysql.rds.aliyuncs.com' (10060)
